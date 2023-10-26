@@ -6,7 +6,7 @@ from vispy.scene import visuals, SceneCanvas
 import numpy as np
 from matplotlib import pyplot as plt
 from auxiliary.laserscan import LaserScan, SemLaserScan
-
+import time
 
 class LaserScanVis:
   """Class that creates and handles a visualizer for a pointcloud"""
@@ -197,6 +197,7 @@ class LaserScanVis:
       if self.instances:
         self.inst_img_vis.set_data(self.scan.proj_inst_color[..., ::-1])
         self.inst_img_vis.update()
+
 
   # interface
   def key_press(self, event):

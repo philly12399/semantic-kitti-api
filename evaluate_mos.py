@@ -52,7 +52,7 @@ if __name__ == '__main__':
       '--datacfg', '-dc',
       type=str,
       required=False,
-      default="config/semantic-kitti-mos.yaml",
+      default="config/semantic-kitti-wayside.yaml",
       help='Dataset config file. Defaults to %(default)s',
   )
   parser.add_argument(
